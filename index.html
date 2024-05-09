@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.css"
+      integrity="sha512-U9Y1sGB3sLIpZm3ePcrKbXVhXlnQNcuwGQJ2WjPjnp6XHqVTdgIlbaDzJXJIAuCTp3y22t+nhI4B88F/5ldjFA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+
+      <style>
+        .toggle {
+          background-color: gray;
+          color: purple;
+          background-image: linear-gradient(to top left, red , yellow);
+        }
+        </style>
+  
+</head>
+<body>
+
+    <h2 id="title">Heading Here</h2>
+    <button id="btn">Dark Theme</button>
+    <i class="fa-solid fa-eye"></i>
+    <input id="input" type="password" placeholder="Enter Password" />
+    <button id="toggle">Toggle password</button>
+
+    <script>
+      //  DOM
+
+      const btn = document.getElementById("btn");
+      const title = document.getElementById("title");
+
+      const body = document.body;
+
+      btn.addEventListener("click", () => {
+        body.classList.toggle("toggle");
+      });
+
+      document.getElementById("toggle").addEventListener("click", () => {
+          document.getElementById("input").type = "text"
+      })
+    </script>
+
+  
+</body>
+</html>
